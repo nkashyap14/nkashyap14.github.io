@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Experience - Your Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +17,10 @@
             <a href="index.html" class="logo">YourName</a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="experience.html" class="nav-link active">Experience</a></li>
                     <li><a href="articles.html" class="nav-link">Articles</a></li>
                     <li><a href="interests.html" class="nav-link">Interests</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -49,82 +49,64 @@
     </div>
     <div class="overlay" id="overlay"></div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span style="color: var(--primary-color);">Your Name</span><br>Software Engineer</h1>
-                <p class="hero-subtitle">I build exceptional digital experiences that make people's lives better. Focused on creating elegant solutions to complex problems.</p>
-                <div class="hero-cta">
-                    <a href="projects.html" class="btn">View My Work</a>
-                    <a href="contact.html" class="btn btn-outlined">Contact Me</a>
-                </div>
-            </div>
-            <img src="/api/placeholder/600/600" alt="Hero Image" class="hero-image">
-        </div>
-    </section>
-
-    <!-- Sections Preview -->
-    <section class="sections-preview">
+    <!-- Experience Section -->
+    <section class="experience page-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Explore My Portfolio</h2>
-                <p class="section-subtitle">Browse through the different sections of my portfolio to learn more about me and my work.</p>
+                <h1 class="section-title">My Experience</h1>
+                <p class="section-subtitle">Here's a summary of my professional journey.</p>
             </div>
-            
-            <div class="preview-grid">
-                <div class="preview-card">
-                    <div class="preview-icon">
-                        <i class="fas fa-user"></i>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2022 - Present</div>
+                        <h3 class="timeline-title">Senior Software Engineer</h3>
+                        <p class="timeline-company">Company Name, Location</p>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Led the development of a key product feature that increased user engagement by 35%</li>
+                                <li>Implemented a new CI/CD pipeline that reduced deployment time by 40%</li>
+                                <li>Mentored junior developers and conducted technical interviews</li>
+                                <li>Collaborated with cross-functional teams to improve system architecture</li>
+                                <li>Proposed and implemented security enhancements across the platform</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="preview-title">About Me</h3>
-                    <p class="preview-description">Learn more about my background, skills, and what drives me as a professional.</p>
-                    <a href="about.html" class="preview-link">View Details <i class="fas fa-arrow-right"></i></a>
                 </div>
-                
-                <div class="preview-card">
-                    <div class="preview-icon">
-                        <i class="fas fa-code"></i>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mar 2019 - Dec 2021</div>
+                        <h3 class="timeline-title">Software Engineer</h3>
+                        <p class="timeline-company">Previous Company, Location</p>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Developed and maintained RESTful APIs and microservices using Node.js</li>
+                                <li>Collaborated with UX designers to implement responsive UI components</li>
+                                <li>Contributed to architectural decisions and introduced testing frameworks</li>
+                                <li>Optimized database queries resulting in 30% performance improvement</li>
+                                <li>Participated in 24/7 on-call rotation for production support</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="preview-title">Projects</h3>
-                    <p class="preview-description">Explore my portfolio of work, including web applications, design projects, and more.</p>
-                    <a href="projects.html" class="preview-link">View Details <i class="fas fa-arrow-right"></i></a>
                 </div>
-                
-                <div class="preview-card">
-                    <div class="preview-icon">
-                        <i class="fas fa-briefcase"></i>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2017 - Feb 2019</div>
+                        <h3 class="timeline-title">Junior Developer</h3>
+                        <p class="timeline-company">First Company, Location</p>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Built and maintained web applications using React and Redux</li>
+                                <li>Implemented responsive designs and ensured cross-browser compatibility</li>
+                                <li>Participated in code reviews and agile development processes</li>
+                                <li>Assisted in migration of legacy applications to modern frameworks</li>
+                                <li>Developed internal tools to improve team productivity</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="preview-title">Experience</h3>
-                    <p class="preview-description">Check out my professional journey, including roles, responsibilities, and achievements.</p>
-                    <a href="experience.html" class="preview-link">View Details <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="preview-card">
-                    <div class="preview-icon">
-                        <i class="fas fa-pen"></i>
-                    </div>
-                    <h3 class="preview-title">Articles</h3>
-                    <p class="preview-description">Read my thoughts and insights on technology, design, and industry trends.</p>
-                    <a href="articles.html" class="preview-link">View Details <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="preview-card">
-                    <div class="preview-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3 class="preview-title">Interests</h3>
-                    <p class="preview-description">Discover what I'm passionate about beyond my professional endeavors.</p>
-                    <a href="interests.html" class="preview-link">View Details <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="preview-card">
-                    <div class="preview-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3 class="preview-title">Contact</h3>
-                    <p class="preview-description">Get in touch with me to discuss opportunities, collaborations, or just to say hello.</p>
-                    <a href="contact.html" class="preview-link">View Details <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
